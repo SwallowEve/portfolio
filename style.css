@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+
+body {
+  font-family: "Merienda", cursive;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+body::before{
+content: "";
+background-image: url(./assets/background.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: absolute;
+top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+opacity: .7;
+}
+
+.nav-link:active {
+  color: #26292c;
+}
+
+h3 {
+  transform: translate3d(0px, 0px, 0px);
+  color: #26292c;
+}
+
+h6 {
+  color: #b4b4b4;
+}
+
+#section-welcome{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.section-welcome--container-box {
+  opacity: 1 !important;
+  }
+
+.section-welcome--container {
+  position: relative;
+  height: 40vh;
+}
+
+.section-welcome--container-pic {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(./assets/swallow.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain cover;
+  opacity: .35;
+}
+
+.section-welcome--container-animate1 {
+  animation: myAnim 5s ease 0s infinite normal none;
+}
+
+.section-welcome--container-animate2 {
+    animation: myAnim2 5s ease 5s infinite normal none;
+ }
+ 
+.section-welcome--slide1 {
+  opacity: 0;
+  animation: SlideIn1 2s ease 1s 1 alternate forwards;
+}
+
+.section-welcome--slide2 {
+  opacity: 0;
+  animation: SlideIn2 2s ease 1s 1 alternate forwards;
+}
+
+ .section-welcome--container-box a:hover, .section-welcome--container-box a:active {
+  animation-play-state: paused;
+  text-decoration: underline !important;
+}
+
+.section-welcome--icon:hover i, .section-welcome--icon:active i {
+  transform: scale(1.5);
+}
+
+
+.img-hover-zoom {
+  overflow: hidden; /* Removing this will break the effects */
+}
+
+.img-hover-zoom--zoom-n-rotate img {/* Zoom-n-rotate Container */
+  transition: transform .5s ease-in-out;
+}
+
+.img-hover-zoom--zoom-n-rotate:hover img {/* The Transformation */
+  transform: scale(1.5) rotate(-25deg);
+}
+
+hr{
+  color: #a1a0a0;
+  height: 1px;
+  
+}
+.border-dark {
+  border-color: rgba(0,0,0,.125) !important;
+}
+
+.card, .btn-outline-dark:hover, .btn-check:checked+.btn-outline-dark{
+  background-color: #a1a0a096;
+}
+ 
+.card:hover, .card:active {
+  animation: myAnim3 1s ease 0s 1 normal none;
+  opacity: 1 !important;
+}
+
+footer{
+height: 100vh;
+background-image: url(./assets/background.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+@keyframes SlideIn1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes SlideIn2 {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes myAnim2 {
+  0% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1199px){
+  .section-welcome--container{
+    font-size: 0.8rem;
+  }
+ 
+}
+@media (max-width: 991px){
+  .section-welcome--container{
+    font-size: 0.7rem;
+  }
+  
+}
+
+@media (max-width: 767px){
+  .section-welcome--container{
+    font-size: 0.5rem;
+    
+  }
+}
