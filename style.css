@@ -212,5 +212,7 @@ background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
     }
-    
+    #section-welcome{
+      height: 120vh;
+    }
 }
