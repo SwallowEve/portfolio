@@ -32,7 +32,7 @@ h3 {
 }
 
 h6 {
-  color: #b4b4b4;
+  color: #5E5E5C;
 }
 
 #section-welcome{
@@ -55,8 +55,8 @@ h6 {
 }
 
 .section-welcome--container-pic {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 38vh;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -69,8 +69,8 @@ h6 {
   opacity: .30;
 }
 .personalImg{
-width: 100%;
-  height: auto;
+width: auto;
+  height: 38vh;
   opacity: 0.8;
 }
 
@@ -196,23 +196,19 @@ background-repeat: no-repeat;
 }
 @media (max-width: 991px){
   .section-welcome--container{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   
 }
 
 @media (max-width: 767px){
-  .section-welcome--container{
-    font-size: 0.5rem;
-    
-  }
+  
   .personalImg{
     margin-top: 12%;
-    width: 50vw;
+    height: 28vh;
     margin-left: auto;
     margin-right: auto;
     }
-    #section-welcome{
-      height: 120vh;
-    }
+    
+   
 }
